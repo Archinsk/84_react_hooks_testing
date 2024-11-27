@@ -1,6 +1,23 @@
-.App {
-  .sidebar {
-    display: flex;
-    flex-direction: column;
-  }
+.app {
+  display: flex;
+  margin: 1rem;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+}
+
+aside,
+main {
+  padding: 1rem;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.mb {
+  margin-bottom: 1rem;
 }

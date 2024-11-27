@@ -22,9 +22,8 @@ import HomeRoute from "./routes/HomeRoute";
 
 function App() {
   return (
-    <div className="App">
-      <div>App Component</div>
-      <div className="sidebar">
+    <div className="app">
+      <aside>
         <Link to="/">general</Link>
         <Link to="/useactionstate">useActionState</Link>
         <Link to="/usecallback">useCallback</Link>
@@ -43,42 +42,44 @@ function App() {
         <Link to="/usestateroute">useState</Link>
         <Link to="/usesyncexternalstoreroute">useSyncExternalStore</Link>
         <Link to="/usetransitionroute">useTransition</Link>
-      </div>
-      <Routes>
-        <Route path="/" element={<HomeRoute />} />
-        <Route path="/useactionstate" element={<UseActionStateRoute />} />
-        <Route path="/usecallback" element={<UseCallbackRoute />} />
-        <Route path="/usecontextrroute" element={<UseContextRoute />} />
-        <Route path="/usedebugvalueroute" element={<UseDebugValueRoute />} />
-        <Route
-          path="/usedeferredvalueroute"
-          element={<UseDeferredValueRoute />}
-        />
-        <Route path="/useeffectroute" element={<UseEffectRoute />} />
-        <Route path="/useidroute" element={<UseIdRoute />} />
-        <Route
-          path="/useimperativehandleroute"
-          element={<UseImperativeHandleRoute />}
-        />
-        <Route
-          path="/useinsertioneffectroute"
-          element={<UseInsertionEffectRoute />}
-        />
-        <Route
-          path="/uselayouteffectroute"
-          element={<UseLayoutEffectRoute />}
-        />
-        <Route path="/usememoroute" element={<UseMemoRoute />} />
-        <Route path="/useoptimisticroute" element={<UseOptimisticRoute />} />
-        <Route path="/usereducerroute" element={<UseReducerRoute />} />
-        <Route path="/userefroute" element={<UseRefRoute />} />
-        <Route path="/usestateroute" element={<UseStateRoute />} />
-        <Route
-          path="/usesyncexternalstoreroute"
-          element={<UseSyncExternalStoreRoute />}
-        />
-        <Route path="/usetransitionroute" element={<UseTransitionRoute />} />
-      </Routes>
+      </aside>
+      <main>
+        <Routes>
+          <Route path="/" element={<HomeRoute />} />
+          <Route path="/useactionstate" element={<UseActionStateRoute />} />
+          <Route path="/usecallback" element={<UseCallbackRoute />} />
+          <Route path="/usecontextrroute" element={<UseContextRoute />} />
+          <Route path="/usedebugvalueroute" element={<UseDebugValueRoute />} />
+          <Route
+            path="/usedeferredvalueroute"
+            element={<UseDeferredValueRoute />}
+          />
+          <Route path="/useeffectroute" element={<UseEffectRoute />} />
+          <Route path="/useidroute" element={<UseIdRoute />} />
+          <Route
+            path="/useimperativehandleroute"
+            element={<UseImperativeHandleRoute />}
+          />
+          <Route
+            path="/useinsertioneffectroute"
+            element={<UseInsertionEffectRoute />}
+          />
+          <Route
+            path="/uselayouteffectroute"
+            element={<UseLayoutEffectRoute />}
+          />
+          <Route path="/usememoroute" element={<UseMemoRoute />} />
+          <Route path="/useoptimisticroute" element={<UseOptimisticRoute />} />
+          <Route path="/usereducerroute" element={<UseReducerRoute />} />
+          <Route path="/userefroute" element={<UseRefRoute />} />
+          <Route path="/usestateroute" element={<UseStateRoute />} />
+          <Route
+            path="/usesyncexternalstoreroute"
+            element={<UseSyncExternalStoreRoute />}
+          />
+          <Route path="/usetransitionroute" element={<UseTransitionRoute />} />
+        </Routes>
+      </main>
     </div>
   );
 }
